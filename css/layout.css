@@ -1,0 +1,1358 @@
+
+/* ////////  Start /////// */
+.Multi-Table{width:100%; background-color: #000; overflow: hidden;}
+p{
+    letter-spacing: 1px;
+    line-height: normal;
+}
+
+.clear{
+    clear: both;
+}
+/* code write here *//* ChangePose*/
+.changePose{position: fixed;
+    z-index: 9000000;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;}
+.changePoseIcon{width: 220px; margin: 18% auto 0;}
+.changePoseIcon>div{.margin-top: 50px;
+    position: relative;
+    width: 65px;
+    left: 78px;
+    top: -11px;
+    -webkit-animation: changePose-animation 3s ease-in 0s infinite;
+    animation: changePose-animation 3s ease-in 0s infinite; }
+.changePoseIcon>p{color: #FFF;
+    text-align: center;
+    line-height: 16px;
+    font-size: 12px;}
+.changePoseIcon>div>img{width: 65px;height: 57px;}
+@-webkit-keyframes changePose-animation {
+  0% {
+    -webkit-transform:rotateZ(-30deg);
+  }
+  35% {
+    -webkit-transform:rotateZ(30deg)
+  }
+  100% {
+    -webkit-transform:rotateZ(-30deg)
+  }
+}
+@media only screen and (orientation: landscape) {
+  .changePose{display:block}
+}
+@media only screen and (orientation: portrait) {
+  .changePose{display:none}
+}
+/* ChangePose //END*/
+
+/* Top_bar */
+.top_bar{
+    height: 49px;
+    width:100%;
+    background-color: #212121;
+    /* position: fixed; */
+    z-index: 101;
+}
+
+.balance_word{
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.history_bar_right{
+    top: 5px;
+    position: relative;
+}
+
+.player_id{
+    color: #5DF0F4;
+    
+    font-size: 8px;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+
+}
+
+/* Top_bar  END*/
+/* -------------------------------------------tableS ------------------------------------------ */
+/* --------------video-------------- */
+
+.tables{
+  width: 100%;
+  height: 530px;
+  overflow: scroll;
+}
+
+.video_film {
+    width: 320px;
+    height: 180px;
+    margin: 5px 0px 0px;
+}
+.video_area.video_show {
+    height: 187px;
+}
+.video_area {
+    overflow: hidden;
+    height: 0px;
+    transition: all .2s ease-in-out;
+    text-align: center;
+    
+    border-radius: 5px 0px 0px 0px;
+}
+
+.btn_video {
+    width: 38px;
+    height: 32px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    float: right;
+    background-image: url(../images/camera_open.png);
+}
+
+.btn_video_close {
+    background-image: url(../images/camera_close.png);
+}
+/* --------------video END-------------- */
+
+/* Table_limit */
+.table_limit{
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #000;
+    height: 26px;
+    line-height: 25px;
+    
+}
+.table_limit ul{
+    position: relative;
+    right: 12px;
+}
+
+.table_limit ul li{
+    display:inline;
+    color: #AAAAAA;
+    font-size: 12px;
+    margin-right: 12px;
+    white-space:nowrap;
+    text-align: center;
+
+}
+
+.table_limit .table_limit_chick{
+    color: #E6BD81;
+    border: solid 1px #E6BD81;
+    padding-right:10px;
+    padding-left: 10px;
+    border-radius:10px;
+
+}
+/* Table_limit END*/
+/* ---------------table---------------- */
+.table{
+    width: 92%;
+    background-color: #484848;
+    border-radius:4px;
+    /* height: 80px; */
+    margin: auto;
+    margin-top: 10px;
+}
+
+.table_nav_bar{
+    height: 32px;
+    width: 100%;
+}
+
+.table_speed_bar{
+  height: 32px;
+  width: 100%;
+}
+
+.table_name{
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    position: relative;
+    float: left;
+    top: 6px;
+    left: 6px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+
+}
+
+.speed_table{
+  background: linear-gradient(red,#FFCD01);
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  position: relative;
+  float: left;
+  top: 6px;
+  left: 6px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.table_speed_bar p{
+  color: yellow;
+  font-size: 12px;
+  position: relative;
+  left: 10px;
+  line-height: 32px;
+  display: inline;
+}
+
+
+
+.table_nav_bar p{
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    left: 10px;
+    line-height: 32px;
+    display: inline;
+}
+
+
+/* ----------------roadmap_slider ----------------*/
+.roadmap_slider{
+    height: 130px;
+    
+}
+
+.roadmap_slider_close{
+  height: 0px;
+  overflow: hidden;
+}
+
+.big_road{
+    width: 90%;
+    height: 109px;
+    margin: auto;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    /* display: block; */
+    overflow: hidden;
+}
+
+.big_road li {
+    border: 1px solid #494e5b;
+    width: 18px;
+    height: 18px;
+    background-color: #1a1a1a;
+    background-repeat: no-repeat;
+    background-size: 260px 139px;
+}
+
+.road_switch{
+    display: block;
+    width: 39px;
+    height: 5px;
+    position: relative;
+    margin: auto;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    
+}
+
+.road_switch li{
+    float: left;
+    margin-right: 8px;
+    width: 5px;
+    height: 5px;
+    background-color: #9A9A9A;
+    border-radius: 2.5px;
+    border: none;
+}
+
+.road_switch .road_switch_onclick{
+    background-color: #5DF0F4;
+}
+
+.big_road ul{
+    /* display: inline; */
+    float: left;
+}
+
+
+.Big_Road_banker{
+    background-position: -124px -26px;
+    background-image: url(../images/icon-list.png);
+}
+
+.Big_Road_player {
+    background-position: -124px 0px;
+    background-image: url(../images/icon-list.png);
+}
+
+.Big_Road_tie {
+    background-position: -73px -74px;
+    background-image: url(../images/icon-list.png);
+}
+
+.Big_Road_bankerPAIR {
+    background-position: -195px -26px;
+    background-image: url(../images/icon-list.png);
+}
+
+.Big_Road_playerPAIR {
+    background-position: -171px 0px;
+    background-image: url(../images/icon-list.png);
+}
+
+/* ----------------roadmap_slider  END----------------*/
+
+
+/*Open Bet*/
+.Open_Bet{background-color: rgba(72, 72, 72, 0.8);    height: 0px;
+    width: 100%; opacity: 0;
+    top: -130px; overflow: hidden;
+    position: relative;}
+    .Open_Bet.Open_Bet_show{height: 114px;  transition: all .3s ease-in-out; opacity: 1;}
+.Open_Bet_Left{width: 50%;  position: absolute;}
+.Open_Bet_Right{width: 50%; position: absolute; right: 0px;}
+    .Open_Bet_show .Open_Bet_Player_Total{ opacity: 1; transition: opacity 0.8s ease-in-out;}
+                   .Open_Bet_Player_Total{ 
+                            opacity: 0;
+                            position: absolute;
+                            left: 10px; top: 11px;
+                            width: 50px; height: 50px; text-align: center;
+                            border-radius: 25px;font-size: 32px; color: #fff; background-color: #0b78e3;}
+    .Open_Bet_show .Open_Bet_Banker_Total{ opacity: 1;transition: opacity 0.8s ease-in-out;}
+                  .Open_Bet_Banker_Total{
+                            opacity: 0;
+                            position: absolute;
+                            left: 110px; top: 11px;
+                            width: 50px; height: 50px; text-align: center;
+                            border-radius: 25px;font-size: 32px; color: #fff; background-color: #ff0000;}
+    .Open_Bet_Banker_Total p,.Open_Bet_Player_Total p { padding-top: 2px; font-weight: bolder; padding-left: 0px; line-height: 43px;}
+    .Open_Bet_Player_Card{  position: relative;
+                            top: 45px;
+                            right: -35px;}
+    .Open_Bet_Banker_Card{  position: relative;
+                            top: 45px;
+                            right: -18px;}
+    .Open_Bet_Player_Card > div ,.Open_Bet_Banker_Card > div{transition: all .3s ease-in;}
+
+/* Open_Bet_effect */    
+          .Open_Bet_effect {transition: 1s ease-in-out;}
+          .Open_Bet_effect .loading-bar {visibility: hidden;}
+          .Open_Bet_effect .table_call{padding-top:0px; }
+          .Shrink_bet_area.Open_Bet_effect .table_call .table_order{transition: 1s ease-in-out;color:#000; background-color: #0b78e3;-webkit-animation: table_Open ;  }
+                /* keyframe animations */
+                @-webkit-keyframes table_Open {
+                  0% { color:#000; background-color: #0b78e3; }
+                  100% { color:#000; background-color: #0b78e3; }
+                }
+          .Shrink_bet_area.Open_Bet_effect .table_status p{transition: 2s ease-in-out;color: #0b78e3; -webkit-animation: status_Open 2s ease-out;}
+                /* keyframe animations */
+                @-webkit-keyframes status_Open {
+                  0% { color: #0b78e3; width: 100%;}
+                  50% { color: #0b78e3; width: 0%;}
+                  100% { color: #0b78e3;width: 100%;}
+                }
+          .Shrink_bet_area.Open_Bet_effect .table_status p span{-webkit-animation: table_banker_total ; visibility: visible;}
+                /* keyframe animations */
+                @-webkit-keyframes table_banker_total {
+                  0% { color: #e22d2d; }
+                  100% { color: #e22d2d; }
+                }
+          .Shrink_bet_area.Open_Bet_effect .table_order span{-webkit-animation: table_bet_icon_effect ; background-image: url(../images/onbet_icon_effect.png); }
+
+/* Card */
+.card {
+    width: 37px;
+    height: 53px;
+    font: 90px/200px "Times New Roman";
+    text-align: center;
+    background-color: #fff;
+  }
+  .card p{
+    font-size: 23px;
+    margin: 0 auto;}
+  .card:before, .card:after {
+    position: absolute;
+    font-size: 15px;
+    line-height: 1;
+  }
+  .card:before {
+    top: 2px;
+    left: 4px;
+  }
+  .card:after {
+    bottom: 2px;
+    right: 5px;
+   -webkit-transform: rotate(180deg);
+  }
+  
+  .heart, .diamond { color: #d00; }
+  
+    .two:before,   .two:after { content: '2'; }
+  .three:before, .three:after { content: '3'; }
+   .four:before,  .four:after { content: '4'; }
+   .five:before,  .five:after { content: '5'; }
+    .six:before,   .six:after { content: '6'; }
+  .seven:before, .seven:after { content: '7'; }
+  .eight:before, .eight:after { content: '8'; }
+   .nine:before,  .nine:after { content: '9'; }
+    .ten:before,   .ten:after { content: '10'; }
+   .jack:before,  .jack:after { content: 'J'; }
+  .queen:before, .queen:after { content: 'Q'; }
+   .king:before,  .king:after { content: 'K'; }
+    .ace:before,   .ace:after { content: 'A'; }
+  
+  .Open_Bet_Player_Card_1st div{}
+  
+  .Open_Bet_Player_Card_2nd div{}
+  
+  .Open_Bet_Player_Card_3rd {
+    transform:rotate(90deg);
+  }
+  
+  .Open_Bet_Banker_Card_1st div{}
+  .Open_Bet_Banker_Card_2nd div{}
+  
+  .Open_Bet_Banker_Card_3rd {
+    transform:rotate(270deg);
+   }
+  
+  
+  /* Card Animation*/
+  .Open_Bet_Player_Card_3rd{ top: -88px;    left: 153px; }
+  .Open_Bet_Player_Card_2nd{ top: -123px;   left: 119px; transform: rotateY(180deg);}
+  .Open_Bet_Player_Card_1st{ top: -123px;   left: 123px; transform: rotateY(180deg);}
+  .Open_Bet_show .Open_Bet_Player_Card_3rd{ top: 22px;  left: 33px; transition-delay:5s; }
+        .Open_Bet_show .Open_Bet_Player_Card_3rd .card {transition-delay:5.5s; transform: rotateY(180deg);backface-visibility:initial;}
+        .Open_Bet_show .Open_Bet_Player_Card_3rd .card:before{transition-delay:5.5s; transform: rotateY(180deg);}
+        .Open_Bet_show .Open_Bet_Player_Card_3rd .card:after{transition-delay:5.5s; transform: rotateY(180deg);}
+        .Open_Bet_show .Open_Bet_Player_Card_3rd .card p{transition-delay:5.5s; transform: rotateY(180deg);}
+  .Open_Bet_show .Open_Bet_Player_Card_2nd{ top: 7px;   left: 39px; transition-delay:3s;  transform: rotateY(0deg);}
+        .Open_Bet_show .Open_Bet_Player_Card_2nd .card {transition-delay:3.5s; transform: rotateY(180deg);backface-visibility:initial;}
+        .Open_Bet_show .Open_Bet_Player_Card_2nd .card:before{transition-delay:3.5s; transform: rotateY(180deg);}
+        .Open_Bet_show .Open_Bet_Player_Card_2nd .card:after{transition-delay:3.5s; transform: rotateY(180deg);}
+        .Open_Bet_show .Open_Bet_Player_Card_2nd .card p{transition-delay:3.5s; transform: rotateY(180deg);}
+  .Open_Bet_show .Open_Bet_Player_Card_1st{ top: 7px;   left: 83px; transition-delay:1s;  transform: rotateY(0deg);}
+        .Open_Bet_show .Open_Bet_Player_Card_1st .card {transition-delay:1.5s; transform: rotateY(180deg);backface-visibility:initial;}
+        .Open_Bet_show .Open_Bet_Player_Card_1st .card:before{transition-delay:1.5s; transform: rotateY(180deg);}
+        .Open_Bet_show .Open_Bet_Player_Card_1st .card:after{transition-delay:1.5s; transform: rotateY(180deg);}
+        .Open_Bet_show .Open_Bet_Player_Card_1st .card p{transition-delay:1.5s; transform: rotateY(180deg);}
+  
+  
+  .Open_Bet_Banker_Card_1st{ top:-113px; left: -38px; transform: rotateY(180deg);}
+  .Open_Bet_Banker_Card_2nd{ top:-113px; left: 5px;   transform: rotateY(180deg);}
+  .Open_Bet_Banker_Card_3rd{ top:-60px;  left: -41px; }
+  .Open_Bet_show .Open_Bet_Banker_Card_1st{ top:7px; left: 0px;  transition-delay:2s; transform: rotateY(0deg);}
+        .Open_Bet_show .Open_Bet_Banker_Card_1st .card {transition-delay:2.5s; transform: rotateY(180deg);backface-visibility:initial;}
+        .Open_Bet_show .Open_Bet_Banker_Card_1st .card:before{transition-delay:2.5s; transform: rotateY(180deg);}
+        .Open_Bet_show .Open_Bet_Banker_Card_1st .card:after{transition-delay:2.5s; transform: rotateY(180deg);}
+        .Open_Bet_show .Open_Bet_Banker_Card_1st .card p{transition-delay:2.5s; transform: rotateY(180deg);}
+  .Open_Bet_show .Open_Bet_Banker_Card_2nd{ top:7px; left: 45px; transition-delay:4s; transform: rotateY(0deg);}
+        .Open_Bet_show .Open_Bet_Banker_Card_2nd .card {transition-delay:4.5s; transform: rotateY(180deg);backface-visibility:initial;}
+        .Open_Bet_show .Open_Bet_Banker_Card_2nd .card:before{transition-delay:4.5s; transform: rotateY(180deg);}
+        .Open_Bet_show .Open_Bet_Banker_Card_2nd .card:after{transition-delay:4.5s; transform: rotateY(180deg);}
+        .Open_Bet_show .Open_Bet_Banker_Card_2nd .card p{transition-delay:4.5s; transform: rotateY(180deg);}
+  .Open_Bet_show .Open_Bet_Banker_Card_3rd{ top:61px;left: 89px; transition-delay:6s;}
+        .Open_Bet_show .Open_Bet_Banker_Card_3rd .card {transition-delay:6.5s; transform: rotateY(180deg);backface-visibility:initial;}
+        .Open_Bet_show .Open_Bet_Banker_Card_3rd .card:before{transition-delay:6.5s; transform: rotateY(180deg);}
+        .Open_Bet_show .Open_Bet_Banker_Card_3rd .card:after{transition-delay:6.5s; transform: rotateY(180deg);}
+        .Open_Bet_show .Open_Bet_Banker_Card_3rd .card p{transition-delay:6.5s; transform: rotateY(180deg);}
+  
+  /* Card animation*/
+  .container {
+    position: absolute;
+    perspective: 800px;
+    border-radius: 4px;
+  }
+  .card {
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 6px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    cursor: pointer;
+  }
+  .card div {
+    position: absolute;
+    width: 37px;
+    height: 53px;
+    -webkit-perspective: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    visibility:visible;
+    border-radius: 6px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .card .front{
+    background-image:url('../images/card_img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card .back{
+    transform: rotateY(180deg);
+    visibility:visible;
+    display: flex;
+    z-index: 999;
+        backface-visibility: initial;
+  }
+  
+  
+
+
+/*----------------------- loading bar------------------------*/
+
+
+  /* loading bar */
+
+  .Shrink_bet_area{
+      background-color: #2D2C2C;
+      height: 32px;
+  }
+
+  .loading-bar {
+    -webkit-animation: width-0to100 25s infinite ease-out;
+    background: #4cda64; 
+    
+    height:5px;
+    bottom: -27px;
+    position: relative;
+    /* vertical-align:bottom; */
+    /* border-radius: 0px 0px 0px 0px; */
+}
+  .loading_bar_BG{position: fixed; background: #000; width: 100%; height: 24px;}
+    /* keyframe animations */
+    @-webkit-keyframes width-0to100 {
+      0% { width: 100%; }
+      100% { width: 30%; background: #4cda64; }
+      32% { width: 28%; background: yellow; }
+      100% { width: 0; background: red; }
+    }
+
+    .table_call{ 
+        font-size:10px; 
+        float: left; 
+        margin: -2px 2px 0px 5px;
+    }
+    .table_status{
+        float:left; 
+         /* padding-left:7px;  */
+         transition: 1s ease-in-out; 
+         /* overflow: hidden;  */
+         height: 27px;
+         position: relative;
+         top: 5px;
+        }
+    .table_status p{ 
+        line-height: 12px; 
+        color:#fff;  
+        font-weight:bolder; 
+        /* -webkit-animation: table_status_p 25s infinite ease-out;  */
+        white-space:nowrap; 
+        overflow: hidden; 
+        letter-spacing: 0;
+        width: 100%;}
+          /* keyframe animations */
+          @-webkit-keyframes table_status_p {
+            0% { color:#000; }
+            30% { color:#000; }
+            32% { color:#fff; }
+            100% { color:#fff; }
+          }
+      .table_status span{
+        font-weight: bolder;
+        padding-left:5px;  
+        color:red; 
+        /* -webkit-animation: table_status_span 25s infinite ease-out; */
+      }
+          /* keyframe animations */
+          @-webkit-keyframes table_status_span {
+            0% { color: red; }
+            30% { color: red; }
+            32% { color: #fff; }
+            100% { color: #fff; }
+          }
+
+
+    .btn_shrink {background-position: -88px 3px;}
+
+    .table_btn{float:right; position: relative; margin-top:-5px; background-color: #484848; }
+    .table_btn div{background-image:url('../images/shrink_img.png');background-size:122px 49px; padding: 0px 19px; width: 47px; height: 32px; float: left;}
+    .table_btn div{padding: 0px 6px; width: 38px;}
+
+
+/* Roadmap Sum*/
+.roadmap_sum{
+    
+    padding-left: 10px;
+    position: relative;
+    float: right;
+    line-height: 22px;
+}
+
+
+
+.roadmap_sum span{
+    
+    font-size : 8px;
+    font-weight: bold;
+    letter-spacing: 0;
+    padding-left: 0px;
+}
+  .sum_Player , .sum_PlayerPair{color: #00B4FF;}
+  .sum_Banker , .sum_BankerPair{color: #FF6363;}
+  .sum_Tie{color: #07ff03;}
+  .sum_Total{color: #fff;}
+
+
+
+/*----------------------- loading bar END------------------------*/
+
+/*-----------------------  Betting_area ----------------------- */
+
+.deck_left{
+    width:17%;
+    float: left;
+}
+
+.deck_right{
+    width: 17%;
+   float:right;
+}
+
+
+
+.deck_main {
+    width: 66%;
+    margin: 5px 0px;
+    display: inline-block;
+    height: 141px;
+}
+
+/*-----------------------  Betting_area END----------------------- */
+/* -------------------------------------------tableS END------------------------------------------ */
+
+/* -----------------------------tool bar --------------------------------------*/
+.winning_information{
+  width: 30%;
+  height: 28px;
+  border-radius: 14px;
+  line-height: 70px;
+  position: relative;
+  left: 10px;
+  background-color: #FF0000;
+  border: solid 2px #FF0000;
+  color: #fff;
+  box-shadow: 0px 0px 15px 2px #FF0000 ;
+  animation-name: winning_text;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+}
+
+.winning_information p{
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: relative;
+  left: 27px;
+  font-weight: Bolder;
+  /* text-shadow:0px 0px 10px rgba(255,255,255,1), 
+  0px 0px 3px rgba(255,255,255,1), 
+  0px 0px 16px rgba(255,255,255,1); */
+}
+
+@keyframes winning_text{
+  0%{
+    background-color: #FF0000;
+    color: #fff;
+    box-shadow: 0px 0px 5px 2px #FF0000 ;
+    text-shadow:0px 0px 10px rgba(255,255,255,1), 
+  0px 0px 3px rgba(255,255,255,1), 
+  0px 0px 16px rgba(255,255,255,1);
+  }
+  30%{
+    background-color: #FF0000;
+    color: #fff;
+    border: solid 2px #FF0000;
+    box-shadow: 0px 0px 15px 2px #FF0000 ;
+    text-shadow:0px 0px 10px rgba(255,255,255,1), 
+  0px 0px 3px rgba(255,255,255,1), 
+  0px 0px 16px rgba(255,255,255,1);
+  }
+  50%{
+    background-color:rgba(255, 0, 0, 0);
+    border: solid 2px #07FF03;
+    box-shadow: 0px 0px 15px 2px #07FF03;
+    color: #07FF03;
+    text-shadow:0px 0px 0px #07FF03, 
+    0px 0px 3px #07FF03, 
+    0px 0px 0px #07FF03;
+  }
+  100%{
+    background-color:rgba(255, 0, 0, 0);
+    border: solid 2px #07FF03;
+    box-shadow: 0px 0px 0px 2px #07FF03;
+    color: #07FF03;
+    text-shadow: 0px 0px 0px #07FF03, 
+  }
+}
+
+.information_part1{
+  display: flex;
+  animation-name: part1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes part1{
+  0%{
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  30%{
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  50%{
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  100%{
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+
+.information_part2 {
+  position: absolute;
+  top: -1px;
+  left: -18px;
+  animation-name: part2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes part2{
+  0%{
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  30%{
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  50%{
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  100%{
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+
+
+.winning_information .table_name{
+  top: 2px;
+  left: 20px;
+  background-color: #fff;
+  color: #FF0000;
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 1) ;
+}
+
+
+.tool_chip_block {
+  width: 80px;
+  margin:5px 70px 0px 0px;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  height: 48px;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  
+}
+.chip_slider{
+  -webkit-transform:rotate(0deg); 
+  -webkit-overflow-scrolling: touch;  
+  border-radius: 25px;
+  overflow-scrolling: touch;
+  background: #58595b; 
+  width: 80px;
+  height: 47px;  
+  box-shadow: 1px 1px 22px 5px rgba(26, 26, 26, 1) inset;
+  font-size:12px; 
+  overflow: scroll; 
+  overflow-y: hidden;
+}
+
+.chip_slider ul{
+  
+  left: -26px;
+  position: absolute;
+  display: flex;
+}
+
+.switch_status{
+  width: 38px;
+  height: 38px;
+  position: relative;
+  right: 15px;
+}
+.switch_status_BTN1{
+  background-image: url(../images/open_all.png);
+}
+
+.switch_status_BTN2{
+  background-image: url(../images/close_all.png);
+}
+
+.switch_status_BTN3{
+  background-image: url(../images/open_up.png);
+}
+
+
+/* -----------------------------tool bar END --------------------------------------*/
+
+/* -----------------------------result --------------------------------------*/
+.result{overflow-y: hidden;
+  max-height: 200px;    background: #000;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  position: fixed;
+  height: 27px;
+  z-index: 99;
+  top:22px;
+  width: 100%;
+  margin-left: 0%;
+  padding-left: 1%;
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 85%,rgba(0,0,0,0) 100%);}
+  .result p{line-height: 17px;font-size:12px; font-weight: bold;}
+.result.opened { height: 163px; z-index: 103;}
+.result.opened >.history_btn{}
+.history_table{height: 27px; font-size:2px;}
+    .dice_word{float: left; font-size: 12px; font-weight: 900;}
+    .word_blue_small{color: #0073ff; font-weight: bold;}
+    .word_red_big{color: #ec1c24; font-weight: bold;}
+    .word_triple{color: #3ee53f; font-weight: bold;}
+    .history_table_wd{float: left; color: #5df0f4; padding-top:4px;}
+    .onbet_money{padding-right: 7px;}
+    .history_bar_left{float: left;  padding-left: 58px;}
+    .history_bar_right{float: right; padding-right: 2%;}
+.history_btn{
+  float: right;
+  color: #5df0f4;
+  height: 23px;
+  border: 2px solid #5df0f4;
+  border-radius: 16px;     transition-property: all;
+    transition-duration: .7s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
+  .bg_toggle{background:  #5df0f4; color: #000; font-weight: bolder;}
+.result_word{margin: 1px 0px 0px 7px; }
+  .result_word p{float: left;  line-height: 17px;}
+  .result_word div{width: 15px; height: 15px ;
+      float: right; margin: 1px 2px;
+      background: url("../images/history_icon.png")no-repeat; background-size: cover;}
+      .result_word.close_icon div{background: url("../images/history_icon_close.png")no-repeat; background-size: cover;}
+  .result_word.balance_word div{background: url("../images/balance_icon.png")no-repeat;background-size: cover;}
+      .result_word.balance_word.close_balance_icon div{background: url("../images/balance_icon_close.png")no-repeat; background-size: cover;}
+      .balance_money.close_balance{display: none;}
+      .balance_btn{margin-right: 4px;}
+.sicbo_history{ direction:rtl;width: 100%; overflow: auto;-webkit-overflow-scrolling: touch;}
+  .dice_history{height: 107px;}
+  .dice_history ul {width: 300%;}
+  .dice_history ul li {padding: 4px 2px 1px;background: #000; float: right; text-align: center;}
+    .dice_history ul li:first-child{ border: 1px solid #79f1d0;box-shadow:1px 2px 1px 1px rgba(121,241,208,0.5) inset;border-radius: 3px;}
+    .h_dice_top{padding: 2px; width: 22px; height: 22px;}
+      .h_dice_top img{width: 100%; }
+      .h_dice_totle p{font-weight: bold; font-size: 10px;}
+      .h_dice_src p{font-weight: bold; font-size: 10px;}
+        .dice_history .result_cover {
+          left: -5%; 
+          position: absolute;
+          width: 80px;
+          height: 110px;
+          background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%) !important;}
+.blue_totle{color:#0073ff;}
+.red_totle{color:#ec1c24;}
+.green_totle{color:#3ee53f;}
+
+
+/* Top_bar//END */
+
+/* menu */
+.menu_btn{
+    transition: all .3s ease-in-out; 
+    position: fixed;
+    float: left;
+    padding: 9px 10px;
+    width: 50px;
+    border-top-right-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+    top:4px;
+    left: 0px;
+
+    box-shadow: none;
+    z-index:102;
+  }
+  .icon-bar{
+    transition: all .6s ease-in-out;
+    display: block;
+    background-color: #5df0f4;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin-top: 5px;}
+      .menu_opened .pop_icon_a1{transform: rotate(46deg);top: 2px;position: relative;}
+      .menu_opened .pop_icon_a2{display: none;}
+      .menu_opened .pop_icon_a3{transform: rotate(-46deg);top: -4px;position: relative;}
+  .menu_btn .icon-bar+.icon-bar {
+    margin-top: 4px;
+  }
+  .menu_btn .icon-bar+.icon-bar+.icon-bar {
+    margin-bottom: 5px;
+  }
+  /* menu popup*/
+  .menu_popup{transition: all .2s ease-in-out; }
+      .menu_popup.menu_opened .menu_popup_area{left: 0%;
+            transition: all .2s ease-in-out; 
+            box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.7);}
+      .menu_popup.menu_opened .menu_btn{left: 200px;transition: all .3s ease-in-out; }
+      .menu_sounds{background-image:url('../images/menu_sounds.png');
+  　               background-repeat:no-repeat;background-size: cover;
+                   width:22px; height:22px; display:block;
+                   margin: 18px 10px 0px; }
+      .menu_sounds.menu_sounds_show{
+                   background-image:url('../images/menu_sounds_close.png');}
+                   .menu_popup_wd.sounds_word_opacity{opacity: 0.5;}
+      .menu_Music{background-image:url('../images/menu_music.png');
+  　               background-repeat:no-repeat;background-size: cover;
+                   width:22px; height:22px; display:block;
+                   margin: 18px 10px 0px; }
+      .menu_Music.menu_Music_show{
+                   background-image:url('../images/menu_music_close.png');}
+                   .menu_popup_wd.music_word_opacity{opacity: 0.5;}
+  
+  .menu_popup_area{transition: all .3s ease-in-out; 
+      width: 200px; height: 100%; padding-top:45px;
+      background: rgba(0%, 0%, 0%, 1);
+      position: fixed;
+      top: 0px;
+      left: -100%;
+      box-shadow: none;
+      z-index: 101;}
+      .menu_btn_blc{height: 60px; margin: 0px 0px 0px 14px; color: #e6bd81;cursor: pointer;opacity: 1;border-bottom: 1px solid #231f20; 
+        background:#000; transition: opacity .15s ease-in-out;}
+      .menu_btn_blc:active {opacity: 0.5;transition: opacity .35s ease-in-out;}
+        .menu_mid{text-align: center;vertical-align: middle;transform: rotate(0deg);
+                  display: table-cell;transition: opacity .35s ease-in-out; }
+                  .menu_mid.menu_mid_acr{transform: rotate(180deg);}
+        .menu_mid p {font-weight: 700; font-size: 13px;}
+        .menu_popup_icon{float: left;}
+          .menu_popup_icon img{width: 22px;margin: 14px 10px;padding-top: 5px;}
+        .menu_popup_wd{float: left;display: table;height: 60px;margin: 0 auto;}
+        .font_write{color: #fff;}
+        .limits_acr{width: 40px;}
+          .limits_accordion{background:#231f20;padding-top: 2px;visibility: hidden;
+                            transition:all .5s ease-in-out;height:0%; overflow:hidden;}
+              .limits_accordion.limits_show{height: 72%; 
+                            transition: all .5s ease-in-out;visibility: visible; 
+                            -webkit-overflow-scrolling: touch;overflow: scroll;}
+          .limits_wd {margin:8px 15px 8px; }
+            .limits_wd p+p{color: #fff; padding-bottom: 7px;}
+          .limits_acr img{width: 17px;}
+          .limits_mid {padding-left: 40px;border-bottom: 1px solid #404041; }
+          .limits_mid p {color:#919396; font-size:13px; line-height:15px;}
+  /*EXIT btn*/
+  .exit_btn .menu_btn{top:57px; padding: 9px 8px; z-index: 100; }
+  .exit_btn .menu_btn :hover {opacity: 0.5; transition: opacity .15s ease-in-out;}
+  .exit_btn img {width: 22px;}
+/*Won effects*/
+.loader {
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: @loader-size;
+}
+.count{ padding-left: 5px;}
+
+  .table_btn{float:right;  }
+    .table_btn div{background-image:url('../images/shrink_img.png'); padding: 0px 19px;  float: left;}
+       .btn_shrink.btn_shrink_BG{background-color: #000; transition: all .2s ease-in-out;}
+    .btn_minimize{background-position: -6px  1px;}
+        .btn_minimize_close {background-position: -6px -21px;}
+
+    .btn_shrink  { border-radius: 5px 5px 0px 0px;}
+        .btn_shrink_close   {background-position: -87px 3px;}
+        .btn_shrink_open  {background-position: -87px 28px;}
+
+/*on bet*/
+.popup_all_area{}
+.status_popup{top: 177px;z-index:100;
+              text-align: center;width: 100%; height: auto; 
+              position: absolute;}
+        .popup_area.popup_show , .topup_popup.popup_show{
+                    visibility: visible;opacity: 1;
+                    transition: opacity 0.3s 0s, visibility 0s 0s;
+                    transition-property: transform;
+                    transition-duration: 0.3s;
+                    transform: translateY(-40px);}
+        .popup_area{position: absolute; margin-left: 10%; z-index: 100;
+                    left: 50%;top: 50%;
+                    margin-left: -40%;    margin-top: 0%;
+                     padding:9px 0px 2px; width: 80%;
+                     border-radius: 4px;
+                     background: #fff; 
+                     box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.2);}
+    .pop_wd{padding-top: 35px;}
+    .pop_wd p {color: #000; padding: 30px; 
+               padding: 0px 0px 16px; font-weight: bold;}
+  .topup_popup{position: absolute; text-align: center; width: 80%; margin: 0 auto;z-index:100; margin-left: 10%; visibility: hidden; opacity: 0; }
+      .pop_icon{background: #2472fc; border: 4px solid #fff;
+        border-radius: 35px; width: 70px;height: 70px;
+        left: 50%; top: -30px; margin-left: -35px; position: absolute;} 
+      .pop_icon img {width: 44px; padding-top: 13px;}
+      .topup_area{background: #fff; color: #000; font-size: 13px;border-radius: 5px; padding: 25px;
+                  /*box-shadow: 0px 0px 35px 2px rgba(0,0,0,0.75);*/
+                  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);}
+         .topup_wd{margin-bottom: 12px;}
+            .topup_wd p{line-height: 14px;}
+         .topup_enter_btn{padding: 8px;background:#2887f5; color:#fff;
+                          border-radius:15px; margin: 0 auto; width: 50%;  }
+         .topup_cancel_btn{font-size: 10px;color: #808083;
+                           padding-top: 17px;text-decoration: underline;}
+         .win_popup{padding-bottom:9px; overflow: hidden;position: relative;
+            top: -231px;}
+         .win_dice_icon{width: 86px; height: 30px; margin: 0 auto; overflow: hidden;}
+         .win_dice_icon div{float: left; position: relative; top:-40px;transition-duration:0.5S;
+                            animation-timing-function: ease-in-out;}
+         .win_dice_icon img{width:27px; padding: 3px;}
+                .popup_show .dice_a1{ top:0px; transition-delay:0.2S;}
+                .popup_show .dice_a2{ top:0px; transition-delay:0.6S;}
+                .popup_show .dice_a3{ top:0px; transition-delay:1S;}
+         .popup_win_wd{padding-bottom: 10px; width: 50%; margin: 0 auto; position: relative;opacity: 0 ;transition-duration:0.3S;animation-timing-function: ease-in-out;}
+                       .popup_show .popup_win_wd{opacity: 1; transition-delay:0.6S;}
+         .popup_win_wd p{font-size: 23px; font-weight: bolder;font-family: 'Headland One', serif;}
+         .popup_win_wd span{ padding-left: 10px; }
+         .popup_win_bet{width:93%; margin:0 auto; position: relative;
+              background: linear-gradient(to bottom, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+              background: radial-gradient(ellipse at center, #141414 0%,#000 88%,#000000 100%);
+              background-size: 5px 5px; 
+              color:#fff;height:70px; font-size: 20px;
+              border-radius:3px;}
+          .popup_win_bet p{ text-shadow: 0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(255,255,255,0.5), 0 0 30px rgba(255,255,255,0.5), 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de;
+                            text-shadow: 7px 0 20px rgba(0,255,255,1) , 0 0 6px rgba(0,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px rgba(0,255,255,1) ;
+                            font-size: 27px;
+                            font-family: 'Lobster', cursive;
+                            text-align: center;
+                            padding-top: 16px; padding-bottom: 17px;
+                            opacity: 1 ;transition-duration:0.3S;animation-timing-function: ease-in-out;}
+                            .popup_show .popup_win_bet p{opacity: 1; transition-delay:0.6S;}
+          .win_triangle{width: 0; margin:0 auto;
+            height: 0; position: relative; top:-2px;
+            border-style: solid;
+            border-width: 12px 12px 0 12px;
+            border-color: #ffffff transparent transparent transparent;
+            }
+.on_bet_show{background: linear-gradient(to bottom, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);}
+.on_bet{ position: relative;z-index: 9;vertical-align: middle;
+        display:block;
+        text-align: center;
+        margin: 0 auto;
+        width: 60px;
+        top:50%;
+        left: 50%;
+        margin-left: -24px;}
+  .bet_amount{position: absolute; display:none;z-index: 99;}
+    .bet_amount p{ background: linear-gradient(to bottom, rgba(255,238,0,1) 0%,rgba(255,195,0,1) 100%);color: #000;text-align: center;
+                   border-radius: 12px; margin-top: 29px;
+                   box-shadow:2px 2px 1px rgba(20%,20%,40%,0.2); 
+                   font-size: 12px;font-weight: bold;padding: 4px 11px;
+                  }
+    .bet_amount_confirm p{ color: #fff; background: linear-gradient(to bottom, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);}
+          .bet_amount.one_bet_wd{left:9px;}
+          .bet_amount.two_bet_wd{left:5px;}
+          .bet_amount.three_bet_wd{left:0px;}
+  .mid_chip{opacity:0; transition: opacity 1s ease; z-index: 97; top:5px;filter:brightness(.7); box-shadow:2px 2px 1px rgba(20%,20%,40%,0.1)}
+  .bot_chip{opacity:0; transition: opacity 1s ease; z-index: 96; top:10px;filter:brightness(.5);}
+  .chip_icon{ width:40px; height: 40px; border-radius: 20px; position: absolute; background: url(../images/bet_blue.png)no-repeat;left: 6px; background-size: cover; display: none;}
+  .on_bet.top_position{    top: 1px;}
+  .on_bet.mid_position{margin-top: -23px !important; }
+  .on_bet.bot_position{margin-top: -27px !important; }
+/*Betin area*/
+
+.btn_comm ,.btn_undo , .btn_2x , .btn_rebet{margin-bottom: 10px;}
+.tool_btn .btn_comm img{
+    width: 50px;
+}
+
+.btn_comm{
+    background-image: url(../images/Comm.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 42px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+.Betting_area{ width:100%; overflow: hidden;  border-radius:5px; margin: 0 auto;  height:0px;  transition: all .2s ease-in-out;}
+    .Betting_area_show{  height:151px;  }
+    .Betting_area_close{  height:0px;  }
+.bet_table_area{display: inline-block; }
+.deck_left{width:17%; float: left;}
+.deck_main{width:66%; margin: 5px 0px;  float: left; display: inline-block; height: 141px;}
+.deck_riht{width:17%; height: 53px; float: right;}
+.bet_table_area p {font-size: 12px; line-height:12px;  position: relative; margin-top: 9px;}
+    .bet_table_area .One_word{padding-top: 7px;}
+.tool_btn.flow_right{ }
+.tool_btn{
+    position: relative;
+    top: 8px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 80px;
+    height: 151px; margin:0 auto; 
+     text-align: center; 
+    }
+.tool_btn img {width: 35px;}
+.tool_btn p {color: #e7be82;
+      font-size: 12px;
+      text-align: center;
+      position: relative;
+      top: -7px;
+    }
+      .btn_confirm{width: 90px; text-align: center;     height: auto;
+       background-color: #E6BD81; float: right; 
+       margin: 0px 0px 5px 0px; opacity: 1;
+       border-radius:27px 0px 0px 27px;
+       position: relative; box-shadow: -3px 3px 6px rgba(0,0,0,.4);
+       right: -100px; transition: all .1s ease-in-out; }
+      .btn_confirm.confirm_show{right: 0%; width: 90px;}
+      .confirm_show .confirm_left{transition-delay: 0.1S;  margin-left: 22px;}
+      .confirm_show .confirm_right{  margin-right: 0px;}
+      .tool_btn.btn_confirm img{
+          margin: 0 auto;   width: 30px; margin-top: 5px;}
+      .tool_btn.btn_confirm p{color:#231F20;font-weight: 800;padding-bottom: 3px;}
+      .btn_confirm .confirm_right img{width: 12px; padding-right: 3px; height: 41px;}
+      .confirm_left{float: left; margin-left: 22px; transition: all .2s ease-in-out;}
+      .confirm_right{float: right; margin-right: -18px; transition: all .1s ease-in-out;}
+
+
+.Betting_div{width: 100%; margin: 0 auto;background: #000;}
+.Betting_table{cursor:default;position:relative;left:0px;width:100%;height:300px;}
+    .BG_blue{background-color: #0966b2; color: #fff;}
+    .BG_red{background-color: #e22d2d; color: #fff;}
+    .BG_green{background-color: #174421; color: #e7be82;}
+      .bet_border {border: 2px solid #494e5b; border-radius: 4px; }
+        .sicbo_Triples{background: #111011; width: 24%; height: 130px; float: left; color: #fff; text-align: center; position: relative;border-left: none;border-right: none;}
+      .sicbo_Triples img{width: 35px; padding: 11px 0px;}
+      .flex-row,
+      .flex-row-reverse,
+      .flex-column,
+      .flex-column-reverse{
+        display:inline-flex;
+        width:100%;
+        height:47px;
+        vertical-align: top;
+      }
+      .flex-row{
+        flex-direction:row;
+      }
+      .flex-row-reverse{
+        flex-direction:row-reverse;
+      }
+      .flex-column{
+        flex-direction:column;
+      }
+      .flex-column-reverse{
+        flex-direction:column-reverse;
+      }
+      .flex-item{
+        text-align:center; 
+        flex: 1;
+        margin:-1px 0 0 -1px;
+      }
+      .total_num{line-height: 23px; padding-top: 9px;color:#e7be82;  font-weight: bold;font-family: 'Headland One', serif;}
+      .popular_Three_Dice_Total .sicbo_odds{line-height: 13px; color: #fff;}
+      .bg_green{background: #212021;}
+      .bg_red{background: #212021;}
+
+/*tool_button*/
+.tool_bar{width: 100%; height: 70px; display:flex;
+  align-items:center;
+  justify-content:space-between;
+          position: fixed;bottom: 0px;padding-top:2px; z-index: 99;
+          background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 15%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%); }
+
+      .btn_rebet{  }
+/* .chip_slider{width: 220px; margin:0 auto; padding-top: 10px;}
+     .chip_slider ul{} */
+.chip_bet{float: left; width: 44px; height: 44px;filter:brightness(.5);}
+.chip_bet.chip_on_bet{filter:brightness(1);}
+.chip_bet p{text-align: center; font-family: 'Headland One', serif;
+      padding-top: 11px;
+      font-size: 10px;
+      font-weight: 900;line-height: 22px;
+      letter-spacing: 0px;}
+.orange_chip{background: url("../images/bet_orange.png")no-repeat; background-size: cover;}
+.blue_chip{background: url("../images/bet_blue.png")no-repeat; background-size: cover;}
+.green_chip{background: url("../images/bet_green.png")no-repeat; background-size: cover;}
+.red_chip{background: url("../images/bet_red.png")no-repeat; background-size: cover;}
+.black_chip{background: url("../images/bet_black.png")no-repeat; background-size: cover;}
+.bet_area_feature, .bet_area_double{ }
+
+
+/* tool_btn_on_click */
+.on_click {
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    opacity: 1;transition: all 0.5s ease;
+  }
+  .on_click:hover, .on_click:focus, .on_click:active {
+    /* transform: scale(1.05); */
+    filter: blur(0.7px);
+    opacity: 0.4
+  }
+
+  .on_click_comm {
+    vertical-align: middle;
+    /* transform: perspective(1px) translateZ(0); */
+    box-shadow: 0 0 1px transparent;
+    /* transition-duration: 0.3s; */
+    transition-property: transform;
+    /* opacity: 1;transition: all 0.5s ease; */
+    background-image: url(../images/comm.png)
+  }
+  .on_click_comm.on_click_comm_open {
+    background-image: url(../images/Non_comm.png)
+    
+  }
+
+
+  
+  /*tool_button  //END*/
+
+  /* win_bet_effect */
+
+/* .win_dollars{
+      position: relative;;
+      width: 290px;
+      height: 90px;
+      background-color: #fff;
+      margin: auto;
+      top: -233px;
+       border-radius: 4px;
+  }
+
+.win_font_effect{
+    background-color: 
+} */
+/* 
+.win_popup {
+    padding-bottom: 6px;
+    overflow: hidden;
+}
+
+.popup_area {
+    position: absolute;
+    margin-left: 10%;
+    z-index: 104;
+    left: 50%;
+    top: 50%;
+    margin-left: -40%;
+    margin-top: 0%;
+    padding: 9px 0px 2px;
+    width: 80%;
+    
+    border-radius: 4px;
+    
+    background: #fff;
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.2);
+}
+
+.popup_win_bet p {
+    text-shadow: 0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(255,255,255,0.5), 0 0 30px rgba(255,255,255,0.5), 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de;
+    text-shadow: 7px 0 20px rgba(0,255,255,1), 0 0 6px rgba(0,255,255,1), 0 0 10px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,1), 0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px rgba(0,255,255,1);
+    font-size: 27px;
+    font-family: 'Lobster', cursive;
+    padding-top: 7px;
+    padding-bottom: 17px;
+    /* opacity: 0; */
+    transition-duration: 0.3S;
+    animation-timing-function: ease-in-out;
+}
+
+.popup_win_bet {
+    width: 96%;
+    margin: 0 auto;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    background: radial-gradient(ellipse at center, #141414 0%,#000 88%,#000000 100%);
+    background-size: 5px 5px;
+    color: #fff;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+ */
+
+@keyframes win_bet_effect {
+    25% {background: #5df0f4; opacity: 0.6;}
+    75% {background: #5df0f4; opacity: 0.9;}
+  }
+.win_bet_effect ,.Bet_detail_area .win_bet_effect{box-shadow: 0px 0px 9px 4px #5df0f4;
+    z-index: 9;
+    animation-duration: 1s;animation-timing-function: linear;animation-iteration-count: infinite;
+    animation-name: win_bet_effect;
+    background: #5df0f4;
+    border: #5df0f4;}
+    .win_bet_effect p,.win_bet_effect p.sicbo_odds ,.Bet_detail_area .win_bet_effect .total_num {color: #000;}
+    /* win_bet_effect //END*/
+
+/* ////////  End /////// */
+
+
+/* ////////////////  RWD ////////////////  */
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 375px) {}
+
+@media screen and (min-width: 320px) {}
